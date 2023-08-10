@@ -1,0 +1,1 @@
+Entry{firstName='James', lastName='Sinnott', phoneNumber='0873689476', address='Finchogue', email='JamesRichardSinnott@gmail.com'}
