@@ -46,5 +46,14 @@ public class AddressBook {
     }
 
     public void displayEntries() {
+
+        System.out.println();
+        if (entries.size() > 0) {
+            for (Entry entry : entries) {
+                System.out.println(entry);
+            }
+        } else {
+            System.out.println("There are no entries in the address book. Fill it up!");
+        }
     }
 }
