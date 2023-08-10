@@ -29,5 +29,11 @@ public class Console {
         return option;
     }
 
+    public String promptEntryField(String field) {
+        System.out.println();
+        System.out.println(field);
+        return in.nextLine();
+    }
+
 }
 

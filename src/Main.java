@@ -11,16 +11,11 @@ public class Main {
             int option = console.selectOption();
 
             switch (option) {
-                case 1:
-                    addressBook.addEntry();
-                case 2:
-                    addressBook.searchForEntry();
-                case 3:
-                    addressBook.saveEntries();
-                case 4:
-                    addressBook.displayEntries();
-                case 5:
-                    System.exit(0);
+                case 1 -> addressBook.addEntry(console);
+                case 2 -> addressBook.searchForEntry();
+                case 3 -> addressBook.saveEntries();
+                case 4 -> addressBook.displayEntries();
+                case 5 -> System.exit(0);
             }
         }
 
