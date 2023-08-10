@@ -38,8 +38,24 @@ public class AddressBook {
 
     }
 
-    public void searchForEntry() {
+    public void searchForEntry(Console console) {
+        String lastNameToSearchFor = console.promptEntryField("Enter last name to search for:");
 
+        boolean found = false;
+
+        for (Entry entry : entries) {
+            if (entry.getLastName().equals(lastNameToSearchFor)) {
+                found = true;
+                System.out.println();
+                System.out.println("Entry found! See below");
+                System.out.println(entry);
+            }
+        }
+
+        if (!found) {
+            System.out.println();
+            System.out.println("Entry could not be found. Tá brón orm!");
+        }
     }
 
     public void saveEntries() {

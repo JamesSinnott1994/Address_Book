@@ -12,7 +12,7 @@ public class Main {
 
             switch (option) {
                 case 1 -> addressBook.addEntry(console);
-                case 2 -> addressBook.searchForEntry();
+                case 2 -> addressBook.searchForEntry(console);
                 case 3 -> addressBook.saveEntries();
                 case 4 -> addressBook.displayEntries();
                 case 5 -> System.exit(0);
