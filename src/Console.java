@@ -1,4 +1,8 @@
+import java.util.Scanner;
+
 public class Console {
+
+    Scanner in = new Scanner(System.in);
 
     public void presentWelcomeMessage() {
         System.out.println();
@@ -10,6 +14,19 @@ public class Console {
         System.out.println("3. Save Entries");
         System.out.println("4. Display Entries");
         System.out.println("5. Exit");
+    }
+
+    public int selectOption() {
+        System.out.println();
+        System.out.println("Enter option number:");
+        int option = Integer.parseInt(in.nextLine());
+
+        while (option < 1 || option > 5) {
+            System.out.println();
+            System.out.println("Invalid option number entered, please select a number between 1 and 5:");
+            option = Integer.parseInt(in.nextLine());
+        }
+        return option;
     }
 
 }
